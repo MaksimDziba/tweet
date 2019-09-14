@@ -1,11 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './like-button.css';
 
 const LikeButton = ({ count }) => (
   <span className="like-button">
-    <span aria-hidden="true" className="icon_heart_alt" />
+    <i className="fa fa-heart" />
     {count > 0 && <span className="like-count">{count}</span>}
   </span>
 );
+
+LikeButton.propTypes = {
+  count: PropTypes.number,
+};
 
 export default LikeButton;

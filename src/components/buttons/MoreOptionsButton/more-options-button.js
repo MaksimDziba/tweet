@@ -1,7 +1,8 @@
 import React from 'react';
+import './more-options-button';
 
 const MoreOptionsButton = () => (
-  <span aria-hidden="true" className="icon_adjust-vert" />
+  <i className="fa fa-ellipsis-h more-options-button" />
 );
 
 export default MoreOptionsButton;

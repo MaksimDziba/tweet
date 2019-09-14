@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './name-with-handle.css';
 
 const NameWithHandle = ({ author }) => {
@@ -9,6 +11,13 @@ const NameWithHandle = ({ author }) => {
       <span className="handle">@{handle}</span>
     </span>
   );
+};
+
+NameWithHandle.propTypes = {
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    handle: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default NameWithHandle;

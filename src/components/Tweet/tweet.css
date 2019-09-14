@@ -1,4 +1,4 @@
-.tweet { 
+.tweet {
   border: 1px solid #ccc;
   width: 564px;
   min-height: 68px;
@@ -14,8 +14,6 @@
   font-size: 1.4em;
   color: #aab8c2;
 }
-.buttons span {
-  display: inline-block;
+.buttons i {
   width: 80px;
 }
-  

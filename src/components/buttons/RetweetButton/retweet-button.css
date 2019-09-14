@@ -5,3 +5,10 @@
   margin-left: 6px;
   font-weight: bold;
 }
+.retweet-button {
+  width: 80px;
+  display: inline-block;
+}
+.retweet-button i {
+  display: inline;
+}

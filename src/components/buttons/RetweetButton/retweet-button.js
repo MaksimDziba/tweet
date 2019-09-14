@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './retweet-button.css';
 
 function getRetweetCount(count) {
@@ -11,9 +13,13 @@ function getRetweetCount(count) {
 
 const RetweetButton = ({ count }) => (
   <span className="retweet-button">
-    <span aria-hidden="true" className="icon_loading" />
+    <i className="fa fa-retweet" />
     {getRetweetCount(count)}
   </span>
 );
+
+RetweetButton.propTypes = {
+  count: PropTypes.number,
+};
 
 export default RetweetButton;

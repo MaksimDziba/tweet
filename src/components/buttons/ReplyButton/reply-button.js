@@ -1,5 +1,6 @@
 import React from 'react';
+import './reply-button.css';
 
-const ReplyButton = () => <span aria-hidden="true" className="arrow_back" />;
+const ReplyButton = () => <i className="fa fa-reply reply-button" />;
 
 export default ReplyButton;
